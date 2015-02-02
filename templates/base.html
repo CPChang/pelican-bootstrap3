@@ -87,7 +87,7 @@
         <link href="{{ SITEURL }}/{{ FEED_ALL_RSS }}" type="application/rss+xml" rel="alternate"
               title="{{ SITENAME }} RSS Feed"/>
     {% endif %}
-
+	
 </head>
 <body>
 
@@ -187,6 +187,10 @@
 {% if BANNER %}
     <script src="{{ SITEURL }}/theme/js/bodypadding.js"></script>
 {% endif %}
+{% if IMAGE_ALT_AS_FIGURECAPTION_JS %}
+	<script src="{{ SITEURL }}/theme/js/imageCaption.js"></script>
+{% endif %}
+
 {% include 'includes/github-js.html' %}
 {% include 'includes/disqus_script.html' %}
 {% include 'includes/ga.html' %}
