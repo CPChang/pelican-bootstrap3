@@ -4,7 +4,7 @@ $(document).ready(function() {
 		// Let's put a caption if there is one
 		if($(this).attr("alt"))
 			$(this).wrap(function(){
-						return "<figure class='" + $(this).attr('class') + "'></figure>";
+						return "<figure class='img-responsive " + $(this).attr('class') + "'></figure>";
 					}
 				).after('<figcaption>'+$(this).attr("alt")+'</figcaption>');
 			$(this).removeClass();
